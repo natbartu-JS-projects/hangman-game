@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "fontOne";
+  src: url(../fonts/jack-and-zeky.regular.ttf); 
+}
+@font-face {
+  font-family: "fontTwo";
+  src: url(../fonts/gillian-joe.regular.ttf); 
+}
+
+:root {
+  --primaryColor: #649bf4;
+  --secondaryColor: #f6f6f6;
+  --thirdColor: #e50292;
+  --radius: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 1px solid red;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--primaryColor);
+}
