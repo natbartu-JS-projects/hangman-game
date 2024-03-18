@@ -10,7 +10,7 @@
 :root {
   --primaryColor: #649bf4;
   --secondaryColor: #f6f6f6;
-  --thirdColor: #e50292;
+  --thirdColor: #3ac304;
   --radius: 10px;
 }
 
@@ -37,4 +37,17 @@ body {
   margin: 70px;
   padding: 60px 40px;
   border-radius: var(--radius);
+}
+
+.hangman-container img {
+  max-width: 250px;
+}
+
+.hangman-container h1 {
+  font-size: 20px;
+  font-family: fontOne;
+  margin-top: 20px;
+  text-align: center;
+  color: var(--thirdColor);
+  text-shadow: 0 0 3px black;
 }
