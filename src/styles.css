@@ -28,3 +28,13 @@ body {
   min-height: 100vh;
   background-color: var(--primaryColor);
 }
+
+.container {
+  width: 800px;
+  background-color: var(--secondaryColor);
+  display: flex;
+  align-items: flex-end;
+  margin: 70px;
+  padding: 60px 40px;
+  border-radius: var(--radius);
+}
