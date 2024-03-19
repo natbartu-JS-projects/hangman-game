@@ -27,7 +27,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: var(--primaryColor);
+  background-color: var(--thirdColor);
 }
 
 .container {
@@ -73,8 +73,8 @@ body {
 .word-display .letter.guessed {
   border: none;
   margin: -40px 0 50px;
-  color: var(--primaryColor);
-  text-shadow:  1px 1px var(--fourthColor);
+  color: var(--fourthColor);
+  
 }
 
 .game-box h4 {
@@ -94,9 +94,10 @@ body {
 
 .game-box .keyboard {
   display: flex;
-  gap: 5px;
+  gap: 8px;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 40px;
 }
 
 .game-box button {
@@ -104,4 +105,15 @@ body {
   font-size: 30px;
   font-family: fontTwo;
   text-transform: lowercase;
+  cursor: pointer;
+  outline: none;
+  padding: 5px;
+  border: none;
+  background-color: var(--primaryColor);
+  color: var(--fourthColor);
+  border-radius: 4px;
+}
+
+.game-box button:hover {
+  background-color: #c4d7f6;
 }
