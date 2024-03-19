@@ -11,6 +11,7 @@
   --primaryColor: #649bf4;
   --secondaryColor: #f6f6f6;
   --thirdColor: #3ac304;
+  --fourthColor: #000000;
   --radius: 10px;
 }
 
@@ -49,7 +50,7 @@ body {
   margin-top: 20px;
   text-align: center;
   color: var(--thirdColor);
-  text-shadow: 0 0 3px black;
+  text-shadow: 0 0 3px var(--fourthColor);
 }
 
 .word-display {
@@ -62,6 +63,14 @@ body {
 
 .word-display .letter {
   width: 30px;
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid var(--fourthColor);
   margin-bottom: 50px;
+  font-size: 70px;
+  text-align: center;
+  font-family: fontTwo;
+}
+
+.word-display .letter.guessed {
+  border: none;
+  margin: -40px 0 50px;
 }
