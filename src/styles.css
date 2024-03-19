@@ -98,27 +98,31 @@ body {
   justify-content: center;
   margin-top: 40px;
 }
-
-.game-box button {
+.keyboard button {
   width: calc(100% / 9 - 5px);
+  padding: 7px;
+}
+
+:where(.keyboard, .game-modal) button {
   font-size: 30px;
   font-family: fontTwo;
-  text-transform: lowercase;
   cursor: pointer;
   outline: none;
-  padding: 5px;
+  padding: 10px 20px;
   border: none;
   background-color: var(--primaryColor);
   color: var(--fourthColor);
   border-radius: 4px;
 }
 
-.game-box button:hover {
+:where(.game-modal, .keyboard) button:hover {
   background-color: #c4d7f6;
+  background-color: var(--thirdColor);
+  color: var(--fourthColor);
 }
 
 .game-modal {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   position: fixed;
@@ -130,7 +134,8 @@ body {
 }
 
 .game-modal img {
-  max-width: 200px;
+  max-width: 150px;
+  margin-bottom: 30px;
 }
 
 .game-modal .content {
@@ -140,4 +145,22 @@ body {
   border-radius: var(--radius);
   text-align: center;
   padding: 30px;
+}
+
+.game-modal h4 {
+  font-size: 30px;
+  font-family: fontOne;
+  color: var(--fourthColor);
+}
+
+.game-modal p {
+  font-family: fontTwo;
+  font-size: 35px;
+  color: var(--fourthColor);
+  margin-bottom: 10px;
+}
+
+.game-modal p b {
+  color: var(--primaryColor);
+  font-weight: bolder;
 }
