@@ -91,3 +91,17 @@ body {
   font-weight: bolder;
   color: var(--primaryColor);
 }
+
+.game-box .keyboard {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.game-box button {
+  width: calc(100% / 9 - 5px);
+  font-size: 30px;
+  font-family: fontTwo;
+  text-transform: lowercase;
+}
