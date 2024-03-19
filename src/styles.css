@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "fontOne";
+  src: url(../fonts/jack-and-zeky.regular.ttf); 
+}
+@font-face {
+  font-family: "fontTwo";
+  src: url(../fonts/gillian-joe.regular.ttf); 
+}
+
+:root {
+  --primaryColor: #649bf4;
+  --secondaryColor: #f6f6f6;
+  --thirdColor: #3ac304;
+  --fourthColor: #000000;
+  --radius: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 1px solid red;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--thirdColor);
+}
+
+.container {
+  width: 800px;
+  background-color: var(--secondaryColor);
+  display: flex;
+  align-items: flex-end;
+  margin: 70px;
+  padding: 60px 40px;
+  border-radius: var(--radius);
+}
+
+.hangman-container img {
+  max-width: 250px;
+}
+
+.hangman-container h1 {
+  font-size: 20px;
+  font-family: fontOne;
+  margin-top: 20px;
+  text-align: center;
+  color: var(--thirdColor);
+  text-shadow: 0 0 3px var(--fourthColor);
+}
+
+.word-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 10px;
+}
+
+.word-display .letter {
+  width: 30px;
+  border-bottom: 3px solid var(--fourthColor);
+  margin-bottom: 50px;
+  font-size: 70px;
+  text-align: center;
+  font-family: fontTwo;
+}
+
+.word-display .letter.guessed {
+  border: none;
+  margin: -40px 0 50px;
+  color: var(--fourthColor);
+}
+
+.game-box h4 {
+  text-align: center;
+  font-size: 25px;
+  font-family: fontTwo;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: var(--fouthColor);
+}
+
+.game-box .guesses-text b {
+  font-weight: bolder;
+  color: var(--primaryColor);
+}
+
+.game-box .keyboard {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.game-box button {
+  width: calc(100% / 9 - 5px);
+  font-size: 30px;
+  font-family: fontTwo;
+  text-transform: lowercase;
+  cursor: pointer;
+  outline: none;
+  padding: 5px;
+  border: none;
+  background-color: var(--primaryColor);
+  color: var(--fourthColor);
+  border-radius: 4px;
+}
+
+.game-box button:hover {
+  background-color: #c4d7f6;
+}
